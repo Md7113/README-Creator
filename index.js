@@ -29,7 +29,7 @@ const questions = [{
     name: 'TableOfContents',
     message: 'select every option you want in your table of contents, use Space bar to select an option <a> to select all and <i> to invert your selections:',
     type: 'checkbox',
-    choices: ['1. [Title](#Title)','2. [description](#Description)','3. [Table of Contents](#Table)','4. [Instalation](#Instalation)','5. [Usage](#Usage)','6. [License](#License)','7. [Contributing](#Contributing)','8. [Test](#Tests)','9. [Questions](#Questions)']
+    choices: ['Title','description','Instalation','Usage','License','Contributing','Tests','Questions']
    },{
     name:'Instalation',
     message: 'Write Instalation instructions if aplicable, if not Write N/A and this option will not be included: ',
@@ -74,7 +74,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
       .then(function(userAnswer){
-       console.log(answer.Contributing.split(','))
+       console.log(userAnswer.Contributing.split(','))
        console.log(`${user(userAnswer)}`)
        let file = userAnswer.title + '-README.md'
        writeToFile(file,user(userAnswer))
