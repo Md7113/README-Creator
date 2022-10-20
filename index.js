@@ -76,7 +76,7 @@ function init() {
       .then(function(userAnswer){
        console.log(userAnswer.Contributing.split(','))
        console.log(`${user(userAnswer)}`)
-       let file = userAnswer.title + '-README.md'
+       let file = "./ReadMe-content/"+userAnswer.title + '-README.md'
        writeToFile(file,user(userAnswer))
 
       })
