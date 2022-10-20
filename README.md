@@ -2,7 +2,7 @@
 
 
 ## Deployed link
-None, as this is not a deployed sit, However there is a link to a walktrhgouh video at :
+None, as this is not a deployed sit, However there is a link to a walktrhgouh video at : [check it out](https://drive.google.com/file/d/1iu9PkS9U78iPYTjEa7idM7FBIantRT3z/view)
 
 ## Interface picture
 ![Node Interface](Node-interface.png)
