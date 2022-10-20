@@ -29,7 +29,7 @@ const questions = [{
     name: 'TableOfContents',
     message: 'select every option you want in your table of contents, use Space bar to select an option <a> to select all and <i> to invert your selections:',
     type: 'checkbox',
-    choices: ['Title','description','Instalation','Usage','License','Contributing','Tests','Questions']
+    choices: ['description','Instalation','Usage','License','Contributing','Tests','Questions']
    },{
     name:'Instalation',
     message: 'Write Instalation instructions if aplicable, if not Write N/A and this option will not be included: ',

@@ -41,9 +41,9 @@ function generateMarkdown(data) {
   let badgeAns = licenseArr.indexOf(data.License)
   let badgeShow = badgeArr[badgeAns]
 
-  return `#Title
+  return `#${data.title}
 
-${data.title}
+
 
 
 
