@@ -74,8 +74,6 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
       .then(function(userAnswer){
-       console.log(userAnswer.Contributing.split(','))
-       console.log(`${user(userAnswer)}`)
        let file = "./ReadMe-content/"+userAnswer.title + '-README.md'
        writeToFile(file,user(userAnswer))
 
